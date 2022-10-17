@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.background {
+  height: 100vh;
+  width: 100vw;
+  /* background: linear-gradient(#425f57, #425f57, #749f82, #a8e890, #cfff8d); */
+  /* background: linear-gradient(#425f57, #425f57, #749f82, #a8e890, #cfff8d) url("https://www.icegif.com/wp-content/uploads/character-icegif-5.gif") repeat ; */
+   
+  /* background:#a8e890 url("https://www.transparenttextures.com/patterns/basketball.png"); */
+  /* background:#072d41 url("https://www.transparenttextures.com/patterns/bright-squares.png") ; */
+  /* background: url("/Tictac/excited.gif") no-repeat right; */
+  /* background:  #121212 url("/Tictac/excited.gif") right bottom no-repeat, url("https://www.transparenttextures.com/patterns/bright-squares.png") left top repeat; */
+background-color: #02213c;
+  background-image:url("https://www.transparenttextures.com/patterns/bright-squares.png"), url("/Tictac/excited.gif"),url("https://i.pinimg.com/originals/51/5a/8d/515a8da287ae3d77dfbf851515c63734.gif") ;
+  background-position: right , left top,right bottom;
+  background-repeat: repeat, no-repeat,no-repeat;
+  padding: 15px;
+}
+
+#game {
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  overflow: hidden;
+  background-color: #5aa793;
+  background-image: url("http://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+#character {
+  width: 20px;
+  height: 20px;
+  /* background: url("https://www.icegif.com/wp-content/uploads/character-icegif-5.gif"); */
+  /* background: url("https://i.pinimg.com/originals/51/5a/8d/515a8da287ae3d77dfbf851515c63734.gif"); */
+  background-size: contain;
+  background: repeating-conic-gradient(rgba(255, 0, 98, 0.712) 0deg 10deg, #815b5b 10deg 20deg, #2c3333 20deg 30deg);
+  /* background-image: conic-gradient(rgb(255, 77, 0), rgb(0, 255, 85), rgb(0, 128, 75), rgb(187, 0, 255), rgb(206, 14, 110)); */
+  /* background: linear-gradient(#815b5b, #2c3333); */
+  border-radius: 50%;
+  position: relative;
+  top: 440px;
+  left: 190px;
+  z-index: 100000;
+}
+
+.block {
+  width: 400px;
+  height: 20px;
+  /* background-color: #000; */
+  background: radial-gradient(#1c0a00, #361500, #603601, #cc9544);
+  box-shadow: 5px 5px 5px 5px rgb(7, 7, 7);
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+}
+
+.hole {
+  width: 40px;
+  height: 20px;
+  /* background-color:#6cae96; */
+  background: linear-gradient(to right, #5aa793, #97bc9d, #6cae96);
+
+  box-shadow: 5px rgb(7, 7, 7);
+  /* border-radius: 3px; */
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
+  /* z-index: -1; */
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #388b80}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
